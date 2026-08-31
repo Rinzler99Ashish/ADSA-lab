@@ -1,6 +1,6 @@
 #include<stdio.h>
 #define max 100
-char stack[max];
+char stack[max];//used to convert infix to postfix
 int top=-1;
 
 void push(char ch)
@@ -32,7 +32,7 @@ char peek()
         return stack[top]; 
 }
 
-int sstack[max];
+int sstack[max];//used to evaluate postfix expression
 int ttop=-1;
 void ppush(int val)
 {
