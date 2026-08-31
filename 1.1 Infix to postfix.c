@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #define max 100
 
-char stack[max];
+char stack[max]; 
 int top=-1;
 
 void push(char ch)
@@ -78,6 +78,7 @@ int main()
     printf("Enter infix expression: ");
     scanf("%s",infix);
 
+    printf("Postfix: ");
     post_fix(infix,postfix);
     printf("%s",postfix);
     
